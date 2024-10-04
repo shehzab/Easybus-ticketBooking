@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket Here</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #ticket-container {
+            display: none;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #ticket-container h2 {
+            color: #333;
+            text-align: center;
+        }
+        #ticket-details {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner1">
+        <div class="navbar">
+            <div class="logo">
+                <h1 style="color: white;">EasyBus</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Ticket Booking</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="fromto">
+            <h1 style="color: white;">Book Your Ticket</h1>
+            <p style="color: white;">Select your location and the desired destination from below, then proceed.</p>
+            <label for="from-destination" style="color: white;">From:</label>
+            <select id="from-destination" name="from-destination">
+                <option value="select">Select your location</option>
+                <option value="Kasaragod">Kasaragod</option>
+                <option value="Kannur">Kannur</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Agra">Agra</option>
+                <option value="Jaipur">Jaipur</option>
+            </select>
+            <br>
+            <label for="to-destination" style="color: white;">To:</label>
+            <select id="to-destination" name="to-destination">
+                <option value="select">Select your destination</option>
+                <option value="Kasaragod">Kasaragod</option>
+                <option value="Kannur">Kannur</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Agra">Agra</option>
+                <option value="Jaipur">Jaipur</option>
+            </select>
+            <br>
+            
+            <div id="fare-display" style="color: white; margin-top: 20px; font-size: 1.2em;"></div>
+
+            <h2 style="color: white; margin: 20px 0; padding: 10px">Passenger Information</h2>
+            <div class="passenger-info">
+                <input type="text" id="passenger-name" placeholder="Passenger Name" required>
+                <input type="number" id="passenger-age" placeholder="Age" required>
+                <input type="text" id="contact-number" placeholder="Contact Number" required>
+                <input type="date" id="travel-date" placeholder="Travel Date" required>
+                <input type="number" id="number-of-tickets" placeholder="Number of Tickets" required>
+            </div>
+            <button type="submit">Proceed</button>
+        </div>
+
+        <!-- New ticket display section -->
+        <div id="ticket-container">
+            <h2>Your Ticket</h2>
+            <div id="ticket-details"></div>
+        </div>
+    </div>
+    <script src="booking-script.js"></script>
+</body>
+</html>

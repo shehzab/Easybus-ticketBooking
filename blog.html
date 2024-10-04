@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">              
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>EasyBus - Blog</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>EasyBus</h1>
+        </div>
+        <div class="links">
+            <div class="link"><a href="index.html">Home</a></div>
+            <div class="link"><a href="about.html">About</a></div>
+            <div class="link"><a href="services.html">Services</a></div>
+            <div class="link"><a href="pages.html">Pages</a></div>
+            <div class="link"><a href="blog.html">Blog</a></div>
+            <div class="link"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="buttons">
+            <button>Login</button>
+            <button>SignUp</button>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <div class="search-container">
+            <input type="text" placeholder="Search blog..." class="search-bar">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="category-filter">
+            <button>All</button>
+            <button>Travel</button>
+            <button>Tips</button>
+            <button>Eco-friendly</button>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card" data-aos="fade-up">
+                <div class="blog-image">
+                    <img src="/api/placeholder/400/320" alt="Top Travel Destinations">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>By Admin</span>
+                        <span>October 1, 2024</span>
+                    </div>
+                    <h2>Top Travel Destinations for 2024</h2>
+                    <p class="blog-excerpt">Discover the most exciting bus travel destinations for this year. From scenic routes to city adventures...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-image">
+                    <img src="/api/placeholder/400/320" alt="Travel Tips">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>By Admin</span>
+                        <span>September 28, 2024</span>
+                    </div>
+                    <h2>Essential Bus Travel Tips</h2>
+                    <p class="blog-excerpt">Make your journey comfortable and enjoyable with these essential tips for bus travel...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="blog-image">
+                    <img src="/api/placeholder/400/320" alt="Eco-friendly Travel">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>By Admin</span>
+                        <span>September 25, 2024</span>
+                    </div>
+                    <h2>Eco-friendly Travel Options</h2>
+                    <p class="blog-excerpt">Learn how bus travel contributes to reducing your carbon footprint and sustainable tourism...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-posts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Understanding Travel Insurance</a></li>
+                <li><a href="#">Top 10 Scenic Routes</a></li>
+                <li><a href="#">Budget Travel Hacks</a></li>
+            </ul>
+        </div>
+
+        <div class="comment-section">
+            <h3>Leave a Comment</h3>
+            <textarea placeholder="Your comment..." rows="3"></textarea>
+            <button class="submit-comment">Submit</button>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
